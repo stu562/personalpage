@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 // import Aboutme from 'components/Aboutme';
 import Toolbar from './components/Toolbar/Toolbar';
@@ -9,12 +8,12 @@ class App extends Component {
     return (
       <div className="App">
       <Toolbar />
+      <main style={{marginTop: '64px'}}></main>
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <p>
             Here's to react for a personal page
           </p>
-          <img src='selfport.jpeg' className="self-port" alt="logo"/>
+          <img src='selfport.jpeg' className="self-port"/>
 
           <a
             className="App-link"
