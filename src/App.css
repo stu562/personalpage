@@ -31,3 +31,7 @@
     transform: rotate(360deg);
   }
 }
+
+.self-port {
+  height: 40vmin;
+}
