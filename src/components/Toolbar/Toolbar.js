@@ -1,6 +1,7 @@
 import React from 'react';
 import './Toolbar.css';
 import SideBarToggleButton from '../SideBar/SideBarToggleButton';
+import { SocialIcon } from 'react-social-icons';
 
 const Toolbar = prop => (
   <header className="toolbar">
@@ -10,32 +11,15 @@ const Toolbar = prop => (
       <div className="spacing"></div>   
       <div className="toolbar_navigation-items">
         <ul>
-          <li><a href="/"> About me</a></li>
-          <li><a href="/"> Portfolio</a></li>
-          <li><a
-            className="App-link"
-            href="https://github.com/stu562/"
-            target="_blank"
-            rel="noopener noreferrer"
-          > Github</a></li>
-          <li>          <a
-            className="App-link"
-            href="https://www.linkedin.com/in/steven-song-tu/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            linkedIn
-          </a></li>
-          <li>          <a
-            className="App-link"
-            href="https://www.instagram.com/anything.augmented/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            instagram
-          </a></li>
-          <li><a href="/"> Resume</a></li>
-          <li><a href="/"> Contact</a></li>
+          <li>
+            <SocialIcon bgColor="#ffcb9a" url="http://linkedin.com/in/steven-song-tu" style={{ height: '2rem', width: '2rem' }}/>
+          </li>
+          <li>
+            <SocialIcon bgColor="#ffcb9a" url="https://www.instagram.com/anything.augmented/" style={{ height: '2rem', width: '2rem' }}/>
+          </li>
+          <li>
+            <SocialIcon bgColor="#ffcb9a" url="https://github.com/stu562/" style={{ height: '2rem', width: '2rem' }}/>
+          </li>
         </ul>
       </div>
     </nav>

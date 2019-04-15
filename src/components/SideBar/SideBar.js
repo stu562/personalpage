@@ -1,9 +1,9 @@
 import React from 'react';
-
+import './SideBar.css';
 
 const SideBar = props => (
   <nav>
-    <ul>
+    <ul className="side-bar">
       <li><a href="/"> PRODucts </a></li>
     </ul>
   </nav>

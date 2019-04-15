@@ -2,12 +2,15 @@ import React, { Component } from 'react';
 import './App.css';
 // import Aboutme from 'components/Aboutme';
 import Toolbar from './components/Toolbar/Toolbar';
+import SideBar from './components/SideBar/SideBar';
+
 class App extends Component {
   render() {
     // < Aboutme />
     return (
-      <div className="App">
+      <div className="App" style={{height: '100%'}}>
       <Toolbar />
+      <SideBar />
       <main style={{marginTop: '64px'}}></main>
         <header className="App-header">
           <h1>Steven Tu</h1>
