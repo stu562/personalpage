@@ -1,10 +1,11 @@
 import React from 'react';
 import './Toolbar.css';
+import SideBarToggleButton from '../SideBar/SideBarToggleButton';
 
 const Toolbar = prop => (
   <header className="toolbar">
     <nav className="toolbar__navigation">
-      <div></div>
+      <div><SideBarToggleButton /></div>
       <div className="toolbar__logo"><a href="/">Full Stack Web Developer</a></div>
       <div className="spacing"></div>   
       <div className="toolbar_navigation-items">
@@ -24,6 +25,14 @@ const Toolbar = prop => (
             rel="noopener noreferrer"
           >
             linkedIn
+          </a></li>
+          <li>          <a
+            className="App-link"
+            href="https://www.instagram.com/anything.augmented/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            instagram
           </a></li>
           <li><a href="/"> Resume</a></li>
           <li><a href="/"> Contact</a></li>

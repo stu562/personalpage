@@ -12,7 +12,7 @@ class App extends Component {
         <header className="App-header">
           <h1>Steven Tu</h1>
           <h2>stu562@gmail.com</h2>
-          <img src='selfport.jpeg' className="self-port"/>
+          <img src='selfport.jpeg' className="self-port" alt="whoops"/>
           <p>Steven was once a dreamer. He now works hard to be a go-getter, and is fueled by aspirations and achievements. 
             Steven majored BS in Biochemistry, AA in Dental Hygiene and is a licensed dental hygienist. 
             He was on-route in becoming a dentist. 
@@ -23,7 +23,7 @@ class App extends Component {
             Steven aims to offer the world his creativity in the form of useful products and services.
             </p>
 
-
+          <h1> Portfolio Carosel here as a component </h1>
           
         </header>
       </div>
