@@ -2,7 +2,7 @@
   "name": "stu562.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/stu562/stu562.github.io",
+  "homepage": "https://stu562.github.io/",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
