@@ -8,6 +8,7 @@
 }
 
 .App-header {
+  margin-top:24px;
   background-color: #2F4F4F;
   min-height: 40vh;
   display: flex;
