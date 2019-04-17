@@ -14,13 +14,13 @@
   font-family: 'Courier New', Courier, monospace;
   font-size: 100%;
   display:  flex;
-  list-style: none;
   flex-direction: column;
   justify-content: center;
 }
 
 .side-bar li {
   margin: 0.5rem 0;
+  list-style: none;
 }
 
 .side-bar a {

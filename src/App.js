@@ -52,10 +52,10 @@ class App extends Component {
               <li>Express</li>
               <li>React</li>
               <li>NodeJS</li>
-              <li>Express</li>
               <li>Git</li>
             </ul>
-          <h1> Portfolio Carosel here as a component </h1>
+          <h1> Portfolio Carousel here as a component </h1>
+          <h1> Render Instagram Api </h1>
         </header>
       </div>
     );

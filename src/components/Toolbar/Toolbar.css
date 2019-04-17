@@ -25,6 +25,7 @@
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
+  min-width: 100vw;
 }
 .toolbar_navigation-items ul {
   list-style: none;
