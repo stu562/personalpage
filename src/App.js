@@ -5,7 +5,7 @@ import SideBar from './components/SideBar/SideBar';
 import Backdrop from './components/Backdrop/Backdrop';
 import Selfport from './components/Selfport/Selfport';
 import Aboutme from './components/Aboutme/Aboutme';
-
+import Zoom from 'react-reveal/Zoom';
 class App extends Component {
   state = {
     sideBarOpen: false,
@@ -36,11 +36,16 @@ class App extends Component {
         {backdrop}
         <header className="App-header" >
           <h1>Steven Tu</h1>
+        <Zoom>
           <Selfport />
+        </Zoom>
+        
           <Aboutme />
           
-
+        <Zoom>
           <h2>Skills</h2>
+        </Zoom>
+
           <ul>
               <li>Javascript</li>
               <li>HTML/CSS</li>
