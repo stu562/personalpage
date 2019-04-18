@@ -18,6 +18,8 @@
 
 .toolbar__logo {
   margin-left: 1rem;
+  width: 100%;
+
 }
 
 .toolbar__logo a {
@@ -25,7 +27,8 @@
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
-  min-width: 100vw;
+  /* min-width: 1000vw; */
+  width: 100%;
 }
 .toolbar_navigation-items ul {
   list-style: none;

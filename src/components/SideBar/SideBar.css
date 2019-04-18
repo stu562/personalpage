@@ -1,12 +1,13 @@
 .side-bar {
   height: 100%;
-  background: white;
+  background: teal;
   box-shadow: 2px 0px 5px rgba(0,0,0,0.2);
   position:fixed;
   left: 0;
   width: 70%;
   max-width: 400px;
   z-index: 200;
+  color: white;
 }
 
 .side-bar ul {
@@ -16,6 +17,7 @@
   display:  flex;
   flex-direction: column;
   justify-content: center;
+  
 }
 
 .side-bar li {
