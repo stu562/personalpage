@@ -136,7 +136,7 @@ class App extends Component {
     </div>
     </Fade>
           
-          <h1> Coming soon Instagram rendering </h1>
+          <h1> Coming soon Instagram Portion</h1>
         </header>
       </div>
     );
