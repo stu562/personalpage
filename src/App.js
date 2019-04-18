@@ -6,7 +6,8 @@ import SideBar from './components/SideBar/SideBar';
 import Backdrop from './components/Backdrop/Backdrop';
 import Selfport from './components/Selfport/Selfport';
 import Aboutme from './components/Aboutme/Aboutme';
-// import Portfolio from './components/Portfolio/Portfolio';
+import Portfolio from './components/Portfolio/Portfolio';
+// import Carousel from 'nuka-carousel';
 
 
 
@@ -61,7 +62,8 @@ class App extends Component {
             
          
           <h1> Portfolio Carousel here as a component </h1>
-
+          <Portfolio />
+          
           <h1> My tech interest pictured by Instagram </h1>
         </header>
       </div>
