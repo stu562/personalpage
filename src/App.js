@@ -8,15 +8,10 @@ import Selfport from './components/Selfport/Selfport';
 import Aboutme from './components/Aboutme/Aboutme';
 import Portfolio from './components/Portfolio/Portfolio';
 import Carousel from 'nuka-carousel';
-// import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faHome, faAddressCard, faFolderOpen, faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
-
-// import your icons
-// import { faMoneyBill } from '@fortawesome/pro-solid-svg-icons';
-// import { faCode, faHighlighter } from '@fortawesome/free-regular-svg-icons';
 
 library.add(
   faUserCircle,
@@ -26,10 +21,7 @@ library.add(
   faLinkedin,
   faGithub,
   faInstagram,
-  // faMoneyBill,
-  // faCode,
-  // faHighlighter
-  // more icons go here
+
 );
 
 class App extends Component {
@@ -89,27 +81,6 @@ class App extends Component {
           <h1>Steven Tu</h1>
           <Selfport />
 
-          <div>
-          <a href="https://www.instagram.com/anything.augmented/">
-            <FontAwesomeIcon style={{ color: 'ffffff' }} size="2x" icon={faUserCircle} />
-          </a>
-          <a href="https://www.instagram.com/anything.augmented/">
-            <FontAwesomeIcon style={{ color: 'ffffff' }} size="2x" icon={faFolderOpen} />
-          </a>
-          <a href="https://www.instagram.com/anything.augmented/">
-            <FontAwesomeIcon style={{ color: 'ffffff' }} size="2x" icon={faGithub} />
-          </a>
-          <a href="https://www.instagram.com/anything.augmented/">
-            <FontAwesomeIcon style={{ color: 'ffffff' }} size="2x" icon={faLinkedin} />
-          </a>
-          <a href="https://www.instagram.com/anything.augmented/">
-            <FontAwesomeIcon style={{ color: 'ffffff' }} size="2x" icon={faInstagram} />
-          </a>
-          <a href="https://www.instagram.com/anything.augmented/">
-            <FontAwesomeIcon style={{ color: 'ffffff' }} size="2x" icon={faAddressCard} />
-          </a>
-
-          </div>
           <Fade top>
             <Aboutme />
           </Fade>
@@ -197,7 +168,7 @@ class App extends Component {
       )}   */}
     </div>
     </Fade>
-          <h1> Coming soon Instagram Portion</h1>
+          {/* <h1> Coming soon Instagram Portion</h1> */}
         </header>
       </div>
     );
