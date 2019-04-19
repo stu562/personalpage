@@ -1,7 +1,6 @@
 import React from 'react';
 import './Toolbar.css';
 import SideBarToggleButton from '../SideBar/SideBarToggleButton';
-// import { SocialIcon } from 'react-social-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faHome, faAddressCard, faFolderOpen, faUserCircle } from "@fortawesome/free-solid-svg-icons";

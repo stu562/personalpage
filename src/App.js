@@ -6,9 +6,9 @@ import SideBar from './components/SideBar/SideBar';
 import Backdrop from './components/Backdrop/Backdrop';
 import Selfport from './components/Selfport/Selfport';
 import Aboutme from './components/Aboutme/Aboutme';
-import Portfolio from './components/Portfolio/Portfolio';
+// import Portfolio from './components/Portfolio/Portfolio';
 import Carousel from 'nuka-carousel';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faHome, faAddressCard, faFolderOpen, faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
