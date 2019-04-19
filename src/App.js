@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import Fade from 'react-reveal/Fade';
 import Toolbar from './components/Toolbar/Toolbar';
 import SideBar from './components/SideBar/SideBar';
 import Backdrop from './components/Backdrop/Backdrop';
 import Selfport from './components/Selfport/Selfport';
 import Aboutme from './components/Aboutme/Aboutme';
+import Fade from 'react-reveal/Fade';
 // import Portfolio from './components/Portfolio/Portfolio';
 import Carousel from 'nuka-carousel';
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -25,9 +25,6 @@ library.add(
 );
 
 class App extends Component {
-  // state = {
-    //   sideBarOpen: false,
-    // }; 
     constructor() {
     super();
     this.state = {
@@ -81,7 +78,7 @@ class App extends Component {
           <h1>Steven Tu</h1>
           <Selfport />
 
-          <Fade top>
+          <Fade bottom>
             <Aboutme />
           </Fade>
           <Fade top cascade>
@@ -131,45 +128,16 @@ class App extends Component {
               width:600
             }}
         />
-
-        {/* {this.state.colors.slice(0, this.state.length).map((color, index) => (
-          <img
-            src={`http://placehold.it/1000x400/${color}/ffffff/&text=slide${index +
-              1}`}
-            alt={`Slide ${index + 1}`}
-            key={color}
-            onClick={this.handleImageClick}
-            style={{
-              height:
-                this.state.heightMode === "current" ? 100 * (index + 1) : 400
-            }}
-          />
-        ))} */}
         
       </Carousel>
-      
-      {/* {this.state.transitionMode !== "scroll" && (
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
-          {this.state.slidesToShow > 1.0 && (
-            <div>
-              <button onClick={() => this.setState({ cellAlign: "left" })}>
-                Left
-              </button>
-              <button onClick={() => this.setState({ cellAlign: "center" })}>
-                Center
-              </button>
-              <button onClick={() => this.setState({ cellAlign: "right" })}>
-                Right
-              </button>
-            </div>
-          )}
-
-        </div>
-      )}   */}
+   
     </div>
     </Fade>
           {/* <h1> Coming soon Instagram Portion</h1> */}
         </header>
+        <footer className="App-footer">
+          <div>DFDFD</div>
+        </footer>
       </div>
     );
   }
