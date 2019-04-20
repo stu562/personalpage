@@ -74,14 +74,16 @@ class App extends Component {
         <div className="App" style={{height: '100%'}}>
         {sideBar}
         {backdrop}
-        <Toolbar sideBarClickHandler={this.sideBarToggleClickHandler}/>
           
+        <Toolbar sideBarClickHandler={this.sideBarToggleClickHandler}/>
         <header className="App-header" >
           <h1>Steven Tu</h1>
+
           <Fade top>
           {/* <Selfport /> */}
             <Aboutme />
           </Fade>
+
           {/* <Fade top cascade> */}
         
           <Skills />
@@ -89,7 +91,7 @@ class App extends Component {
 
         {/* <Fade> */}
       <h2>Btw check out corgies</h2>
-          <div style={{ width: "50%", margin: "auto" }}>
+          <div className="carousel">
       <Carousel
         withoutControls={this.state.withoutControls}
         transitionMode={this.state.transitionMode}
@@ -113,23 +115,21 @@ class App extends Component {
           />
           
           ))}
-        <iframe src='https://www.youtube.com/embed/oVXZTmi2ruI'
+        <iframe className="corgi-video"src='https://www.youtube.com/embed/oVXZTmi2ruI'
         frameBorder='0'
         allow='autoplay; encrypted-media'
         allowFullScreen
         title='video'
-        style={{
-          height:400,
-          width:600
-        }}
+       
         />
         
       </Carousel>
    
     </div>
+    </header>
+
     {/* </Fade> */}
           {/* <h1> Coming soon Instagram Portion</h1> */}
-        </header>
         <footer className="App-footer">
         </footer>
       </div>
