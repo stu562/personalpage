@@ -30,7 +30,7 @@ const Toolbar = (props) => (
         <ul >
         
           <a href="https://www.instagram.com/anything.augmented/">
-            <FontAwesomeIcon className="toolbar_navigation-items" style={{ color: 'ffffff' }} size="2x" icon={faUserCircle} fixedWidth/>
+            <FontAwesomeIcon className="toolbar_navigation-items" style={{ color: 'ffffff' }} size="2x" icon={faUserCircle} />
           </a>
           <a href="https://www.instagram.com/anything.augmented/">
             <FontAwesomeIcon style={{ color: 'ffffff' }} size="2x" icon={faFolderOpen} />

@@ -12,6 +12,7 @@ import Carousel from 'nuka-carousel';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faHome, faAddressCard, faFolderOpen, faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import Skills from './components/Skills/Skills';
 
 library.add(
   faUserCircle,
@@ -71,29 +72,23 @@ class App extends Component {
       
       return (
         <div className="App" style={{height: '100%'}}>
-        <Toolbar sideBarClickHandler={this.sideBarToggleClickHandler}/>
         {sideBar}
         {backdrop}
+        <Toolbar sideBarClickHandler={this.sideBarToggleClickHandler}/>
+          
         <header className="App-header" >
           <h1>Steven Tu</h1>
-          <Selfport />
-
-          <Fade bottom>
+          <Fade top>
+          {/* <Selfport /> */}
             <Aboutme />
           </Fade>
-          <Fade top cascade>
-            <h2>Skills</h2>
-            <ul>
-              <li>Javascript ES6</li>
-              <li>HTML5/CSS</li>
-              <li>Express</li>
-              <li>React</li>
-              <li>NodeJS</li>
-              <li>Git</li>
-            </ul>
-          </Fade>
+          {/* <Fade top cascade> */}
+        
+          <Skills />
+          {/* </Fade> */}
 
-        <Fade>
+        {/* <Fade> */}
+      <h2>Btw check out corgies</h2>
           <div style={{ width: "50%", margin: "auto" }}>
       <Carousel
         withoutControls={this.state.withoutControls}
@@ -103,40 +98,39 @@ class App extends Component {
         wrapAround={!this.state.wrapAround}
         slideIndex={this.state.slideIndex}
         heightMode={this.state.heightMode}
-      >
+        >
     
         {this.state.source.slice(0, this.state.length).map((source, index) => (
           <img
-            src= {`${source}`}
-            alt={`Slide ${index + 1}`}
-            key={source}
-            onClick={this.handleImageClick}
-            style={{
-              height:
-                this.state.heightMode === "current" ? 100 * (index + 1) : 400
-            }}
+          src= {`${source}`}
+          alt={`Slide ${index + 1}`}
+          key={source}
+          onClick={this.handleImageClick}
+          style={{
+            height:
+            this.state.heightMode === "current" ? 100 * (index + 1) : 400
+          }}
           />
           
-        ))}
+          ))}
         <iframe src='https://www.youtube.com/embed/oVXZTmi2ruI'
         frameBorder='0'
         allow='autoplay; encrypted-media'
         allowFullScreen
         title='video'
         style={{
-              height:400,
-              width:600
-            }}
+          height:400,
+          width:600
+        }}
         />
         
       </Carousel>
    
     </div>
-    </Fade>
+    {/* </Fade> */}
           {/* <h1> Coming soon Instagram Portion</h1> */}
         </header>
         <footer className="App-footer">
-          <div>DFDFD</div>
         </footer>
       </div>
     );

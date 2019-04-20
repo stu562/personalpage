@@ -1,0 +1,22 @@
+/* .skills__list ul{
+  list-style: none;
+  text-align: left;
+  display: flex;
+  float:left;
+} */
+
+.column ul {
+  list-style: none;
+}
+
+.column {
+  float: left;
+  margin-right: 50px;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
