@@ -1,9 +1,10 @@
 import React from 'react';
-import './Selfport.css'
+import './Selfport.css';
+import Headshot from '../Img/selfport.jpeg';
 
 const Selfport = (props) => (
   <div>
-    <img src='selfport.jpeg' className="self-port" alt="whoops"/>
+    <img src={Headshot} className="self-port" alt="whoops"/>
   </div>
 )
 

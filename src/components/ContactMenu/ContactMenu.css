@@ -1,0 +1,37 @@
+.contact-menu {
+  height: 100%;
+  background: teal;
+  box-shadow: 2px 0px 5px rgba(0,0,0,0.2);
+  position:fixed;
+  left: right;
+  width: 70%;
+  max-width: 400px;
+  z-index: 200;
+  color: white;
+}
+
+.contact-menu ul {
+  height:100%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 100%;
+  display:  flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.contact-menu li {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+
+.contact-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.contact-menu a:hover, 
+.contact-menu a:active {
+  color:#FFCB9A;
+}

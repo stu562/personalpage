@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faHome, faAddressCard, faFolderOpen, faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import ContactMenu from '../ContactMenu/ContactMenu';
+import ContactMenuToggleButton from '../ContactMenu/ContactMenuToggleButton';
 
 library.add(
   faUserCircle,
@@ -44,9 +46,7 @@ const Toolbar = (props) => (
           <a href="https://www.instagram.com/anything.augmented/">
             <FontAwesomeIcon style={{ color: 'ffffff' }} size="2x" icon={faInstagram} />
           </a>
-          <a href="https://www.instagram.com/anything.augmented/">
-            <FontAwesomeIcon style={{ color: 'ffffff' }} size="2x" icon={faAddressCard} />
-          </a>
+         
         </ul>
       </div>
     </nav>

@@ -2,38 +2,25 @@ import React, { Component } from 'react';
 import './App.css';
 import Toolbar from './components/Toolbar/Toolbar';
 import SideBar from './components/SideBar/SideBar';
+import ContactMenu from './components/ContactMenu/ContactMenu'
 import Backdrop from './components/Backdrop/Backdrop';
-import Selfport from './components/Selfport/Selfport';
 import Aboutme from './components/Aboutme/Aboutme';
-import Fade from 'react-reveal/Fade';
-// import Portfolio from './components/Portfolio/Portfolio';
 import Carousel from 'nuka-carousel';
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faHome, faAddressCard, faFolderOpen, faUserCircle } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import Fade from 'react-reveal/Fade';
 import Skills from './components/Skills/Skills';
-
-library.add(
-  faUserCircle,
-  faFolderOpen,
-  faAddressCard,
-  faHome,
-  faLinkedin,
-  faGithub,
-  faInstagram,
-
-);
 
 class App extends Component {
     constructor() {
     super();
     this.state = {
-      source: [ "https://steamuserimages-a.akamaihd.net/ugc/781784168991145284/150710A93A25AFD1045C9E41F2AABA3FFD5510F9/",
-                "https://i.pinimg.com/originals/b7/f4/1b/b7f41b7d12a94aa3f9020bad9781c74e.jpg",
+      source: [ 
+                "https://github.com/stu562/landingpage/raw/master/img/whatIfySShot.png?raw=true",
+                "https://github.com/stu562/todolist/raw/master/screenshots/528dc36016fda3787d824388d7667643.gif?raw=true",
+                "https://github.com/stu562/hrext06-myCruddyApp/raw/master/screenshot/eebfd16f3166c624b8d9ac645c10559c.gif?raw=true",
                 "https://imagesvc.timeincapp.com/v3/fan/image?url=https://dogoday.com/wp-content/uploads/getty-images/2017/07/651100650.jpeg&",
               ],
       sideBarOpen: false,
+      contactOpen: false,
       slideIndex:0,
       length: 3,
       wrapAround: false,
@@ -53,9 +40,19 @@ class App extends Component {
         return {sideBarOpen: !prevState.sideBarOpen}
       });
     }
+
+    contactToggleClickHandler = () => {
+      this.setState((prevState) => {
+        return {contactOpen: !prevState.contactOpen}
+      });
+    }
+
+
     backdropClickHandler = () => {
       this.setState({sideBarOpen:false});
     }
+    
+
     handleImageClick() {
       this.setState({ underlineHeader: !this.state.underlineHeader });
     }
@@ -64,35 +61,30 @@ class App extends Component {
       
       let sideBar;
       let backdrop;
+      let contactMenu;
       
       if (this.state.sideBarOpen) {
         sideBar = <SideBar />;
         backdrop = <Backdrop click={this.backdropClickHandler} />
       }
+      if (this.state.contactOpen) {
+        contactMenu = <ContactMenu />;
+        backdrop = <Backdrop click={this.backdropClickHandler} />
+      }
       
       return (
         <div className="App" style={{height: '100%'}}>
+        {contactMenu}
         {sideBar}
         {backdrop}
-          
-        <Toolbar sideBarClickHandler={this.sideBarToggleClickHandler}/>
+
+        <Toolbar sideBarClickHandler={this.sideBarToggleClickHandler} contactToggleClickHandler={this.contactToggleClickHandler}/>
         <header className="App-header" >
           <h1>Steven Tu</h1>
 
-          <Fade top>
-          {/* <Selfport /> */}
-            <Aboutme />
-          </Fade>
-
-          {/* <Fade top cascade> */}
-        
-          <Skills />
-          {/* </Fade> */}
-
-        {/* <Fade> */}
-      <h2>Btw check out corgies</h2>
           <div className="carousel">
       <Carousel
+        autoplay="1"
         withoutControls={this.state.withoutControls}
         transitionMode={this.state.transitionMode}
         cellAlign={this.state.cellAlign}
@@ -115,21 +107,31 @@ class App extends Component {
           />
           
           ))}
-        <iframe className="corgi-video"src='https://www.youtube.com/embed/oVXZTmi2ruI'
+        <video className="heart-video"src='https://r5---sn-a5msen7z.c.drive.google.com/videoplayback?id=da7f06e7faf33878&itag=22&source=webdrive&requiressl=yes&mm=30&mn=sn-a5msen7z&ms=nxu&mv=m&pl=32&sc=yes&ttl=transient&ei=tcW7XKvtOde_uQLh7qr4Cg&susc=dr&driveid=14Z_hgJrv7GsNqluVwriP-KdirV1iHe57&app=texmex&mime=video/mp4&dur=108.553&lmt=1555454723831563&mt=1555809636&ip=2605:e000:1520:478e:189b:7137:f755:e924&ipbits=0&expire=1555824118&cp=QVNKV0lfU1FPSVhOOjV0cE9KN1BWQVZw&sparams=ip,ipbits,expire,id,itag,source,requiressl,mm,mn,ms,mv,pl,sc,ttl,ei,susc,driveid,app,mime,dur,lmt,cp&signature=7C27C3FB3001B1A3F082115719C311B0B18AE43DD5327CB466FC3CD71477E5AB.B211B6171AE1B067E57B1FF96146772B947CA469ADE4FC8F2BE6E2812370B344&key=us0&cpn=JHmpEKf57oLdX9OQ&c=WEB_EMBEDDED_PLAYER&cver=20190417'
+        autoplay='1' 
+        muted='1'
+        controls='1'
         frameBorder='0'
         allow='autoplay; encrypted-media'
         allowFullScreen
         title='video'
-       
         />
         
       </Carousel>
    
     </div>
+
+          <h2>Minalistic & elegant</h2>
+          <Fade top>
+            <Aboutme />
+          </Fade>
+          <Fade top >
+            <Skills />
+          </Fade>
+
+          
     </header>
 
-    {/* </Fade> */}
-          {/* <h1> Coming soon Instagram Portion</h1> */}
         <footer className="App-footer">
         </footer>
       </div>
